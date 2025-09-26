@@ -48,7 +48,7 @@
         <div class="row align-items-center">
           <div class="col-md-12">
             <h1><a class="text-light">
-				Improving Flow Matching based Text-to-Speech with Preference aligned Optimization and Classifier-Free Guidance <br> </a></h1>
+				IMPROVING FLOW MATCHING BASED TEXT-TO-SPEECH WITH PREFERENCE-ALIGNED OPTIMIZATION AND CLASSIFIER-FREE GUIDANCE <br> </a></h1>
             <p>
               <div class="row">
                 <div class="col-md col-sm-12"><a class="text-light">Minchuan Chen, Chenchen Wan, Peng Qi, Shaojun Wang, Jing Xiao</a> </div>
@@ -94,7 +94,6 @@
 			  For DPO, we construct different preference speech datasets (Data1, Data2 and Data3) for training. <br>
 
           <br>
-		  <strong>GT</strong>: Ground Truth.<br>
 		  <strong>Baseline</strong>: Pretrained F5-TTS Small model.<br>
           <strong>PA-Base-DT1</strong> : Single model DPO training with Data1 (preference pairs constructing by ground truth samples and generated samples of the pretrained model).<br>
 		  <strong>PA-Base-DT2</strong> : Single model DPO training with Data2 (preference pairs constructing by ranking regular text-audio pairs with WER and SSIM metrics).<br>
@@ -105,13 +104,13 @@
 		  
 	  <hr> 	  
 		  		  		  
-		  <h3>Seed-TTS test-zh</h3>
+		  <h3>Mandarin (Seed-TTS test-zh)</h3>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th></th>
-                          <th>GT</th>
+                          <th>Text</th>
+                          <th>Prompt</th>
                           <th>Baseline</th>
                           <th>PA-Base-DT1</th>
 						  <th>PA-Base-DT2</th>
@@ -123,40 +122,42 @@
                       <tbody>
 						
 						<tr>
-                          <th scope="row">Sample 1</th>
+
+						  <td style="text-align: center">将货物通关时间，从原来的九点二个小时，缩短为九分钟。</td>
+						  
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/1-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-baseDT-2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
@@ -165,40 +166,41 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 2</th>
+                           <td style="text-align: center">尽管时代变迁，但这间老店却像激流里，唯一不动的岩石。</td>
+						   
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/2-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-base-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
@@ -206,118 +208,120 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 3</th>
+                           <td style="text-align: center">产品经理其实是随着互联互联网发展应用，而生的。</td>
+						  
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/3-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000096-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-base-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
-						
-						
 						
                       </tbody>
                     </table>
                   </div>
+
+
+
 				  
                   <div class="small-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 1</th>
+                          <th>将货物通关时间，从原来的九点二个小时，缩短为九分钟。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/1-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-baseDT-2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/1-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-00000028-dual-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -329,70 +333,70 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 2</th>
+                          <th>尽管时代变迁，但这间老店却像激流里，唯一不动的岩石。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/2-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00004512-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-base-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/2-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/00005274-00000055-dual-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -401,73 +405,74 @@
                     </table>
                     
                     
+					
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 3</th>
+                          <th>产品经理其实是随着互联互联网发展应用，而生的。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/source/3-p360.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000096-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/target/p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/Base100/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p50/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-base-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p20/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p10/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2F/p5/3-p229.wav" type="audio/wav" />
+                              <source src="./audio/mandarin/10004423-00000048-dual-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -479,58 +484,58 @@
 		  <hr>
 		  
 		
-		<h3>Seed-TTS test-en</h3>
+		<h3>English (Seed-TTS test-en)</h3>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th></th>
-                          <th>Source</th>
-                          <th>Target</th>
-                          <th>Baseline-100</th>
-						  <th>Proposed-50</th>
-						  <th>Proposed-20</th>
-						  <th>Proposed-10</th>
-                          <th>Proposed-5</th>
+                          <th>Text</th>
+                          <th>Prompt</th>
+                          <th>Baseline</th>
+                          <th>PA-Base-DT1</th>
+						  <th>PA-Base-DT2</th>
+						  <th>PA-Dual-DT1</th>
+						  <th>PA-Dual-DT2</th>
+                          <th>PA-Dual-DT3</th>
                         </tr>
                       </thead>
                       <tbody>
 						
 						<tr>
-                          <th scope="row">Sample 1</th>
+                          <th scope="row">Outdoor area crowded with jeeps packed with people, seen from behind.</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/1-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530_prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_base-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
@@ -539,40 +544,40 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 2</th>
+                          <th scope="row">There is no universal definition of intelligence, but everyone agrees that the ability of learning belongs to it.</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/2-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172_prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_base-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
@@ -580,118 +585,119 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 3</th>
+                          <th scope="row">This was the strangest of all things that ever came to earth from outer space.</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/3-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569_prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_baseline.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_base-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_base-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_dual-DT1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_dual-DT2.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_dual-DT3.wav" type="audio/wav" />
                             </audio>
                           </td>
                         </tr>
-						
-						
-						
+									
                       </tbody>
                     </table>
                   </div>
-				  
+			
+
+
+			
                   <div class="small-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 1</th>
+                          <th>Outdoor area crowded with jeeps packed with people, seen from behind.</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/1-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530_prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_base-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/1-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_591530-common_voice_en_591529_dual-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -703,70 +709,70 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 2</th>
+                          <th>There is no universal definition of intelligence, but everyone agrees that the ability of learning belongs to it.</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/2-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172_prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_base-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/2-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_86172-common_voice_en_86171_dual-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -778,70 +784,70 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 3</th>
+                          <th>This was the strangest of all things that ever came to earth from outer space.</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/source/3-p360.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569_prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>Baseline</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/target/p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_baseline.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>PA-Base-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/Base100/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_base-DT1.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>PA-Base-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p50/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_base-DT2.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>PA-Dual-DT1</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p20/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/common_voice_en_68569-common_voice_en_68570_base-DT3.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>PA-Dual-DT2</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p10/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/3-p251.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>PA-Dual-DT3</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/M2M/p5/3-p251.wav" type="audio/wav" />
+                              <source src="./audio/english/3-p251.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -855,223 +861,250 @@
 
 
 			
-		<h3>Different data scales (pairs) for DPO training</h3>
+		<h3>Effect of preference data size</h3>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th></th>
-                          <th>0</th>
-                          <th>250</th>
-                          <th>500</th>
-						  <th>1000</th>
-						  <th>1500</th>
-						  <th>2000</th>
-                          <th>Proposed-5</th>
+                          <th>Text</th>
+						  <th>Prompt</th>
+                          <th>0 pair</th>
+                          <th>250 pairs</th>
+                          <th>500 pairs</th>
+						  <th>750 pairs</th>
+						  <th>1000 pairs</th>
+						  <th>1500 pairs</th>
+                          <th>2000 pairs</th>
                         </tr>
                       </thead>
                       <tbody>
 						
 						<tr>
-                          <th scope="row">Sample 1</th>
+                          <th scope="row">厨房师傅使用扫把清扫地面后，将其放入用于做菜的锅内进行漂洗。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/1-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000060-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair0.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair250.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair500.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair750.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair1000.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair1500.wav" type="audio/wav" />
                             </audio>
                           </td>
+						  <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004554-00000082-pair2000.wav" type="audio/wav" />
+                            </audio>
+                          </td>						  
                         </tr>
 						
 						
 						
 						
 						<tr>
-                          <th scope="row">Sample 2</th>
+                          <th scope="row">而对于话多的大嗓门先生来说，那难受的劲就更别提了。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/2-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000052-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair0.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair250.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair500.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair750.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair1000.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair1500.wav" type="audio/wav" />
                             </audio>
                           </td>
+						  <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004518-00000106-pair2000.wav" type="audio/wav" />
+                            </audio>
+                          </td>						  
                         </tr>
 						
 						
 						
 						<tr>
-                          <th scope="row">Sample 3</th>
+                          <th scope="row">都需要将车辆的登记身份，从非营非运营换成运营。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/3-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000085-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair0.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair250.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair500.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair750.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair1000.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair1500.wav" type="audio/wav" />
                             </audio>
                           </td>
+						  <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004558-00000044-pair2000.wav" type="audio/wav" />
+                            </audio>
+                          </td>						  
                         </tr>
-						
-						
 						
                       </tbody>
                     </table>
                   </div>
+
+
 				  
                   <div class="small-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 1</th>
+                          <th>厨房师傅使用扫把清扫地面后，将其放入用于做菜的锅内进行漂洗。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/1-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000060-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>0 pair</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair0.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>250 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair250.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>750 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair750.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>1000 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair1000.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>1500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/1-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004554-00000082-pair1500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
+
+                        <tr>
+                          <td>2000 pairs</td>
+                          <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004554-00000082-pair2000.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>						
+						
                       </tbody>
                     </table>
                   
@@ -1079,74 +1112,85 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 2</th>
+                          <th>而对于话多的大嗓门先生来说，那难受的劲就更别提了。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>0 pair</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/2-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000052-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>250 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair0.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>250 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair250.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>750 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair750.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>1000 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair1000.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>1500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/2-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004518-00000106-pair1500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
+						
+                        <tr>
+                          <td>2000 pairs</td>
+                          <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004518-00000106-pair2000.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>						
+						
                       </tbody>
                     </table>
                     
@@ -1154,74 +1198,85 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Sample 3</th>
+                          <th>都需要将车辆的登记身份，从非营非运营换成运营。</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Source</td>
+                          <td>Prompt</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/source/3-p262.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000085-prompt.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Target</td>
+                          <td>0 pair</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/target/p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair0.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Baseline-100</td>
+                          <td>250 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/Base100/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair250.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
 						<tr>
-                          <td>Proposed-50</td>
+                          <td>500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p50/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-20</td>
+                          <td>750 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p20/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair750.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>1000 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p10/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair1000.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-5</td>
+                          <td>1500 pairs</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2F/p5/3-p248.wav" type="audio/wav" />
+                              <source src="./audio/data_scale/00004558-00000044-pair1500.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
+						
+                        <tr>
+                          <td>2000 pairs</td>
+                          <td>
+                            <audio controls>
+                              <source src="./audio/data_scale/00004558-00000044-pair2000.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>
+						
                       </tbody>
                     </table>
                     
@@ -1232,143 +1287,130 @@
 
 
 			
-		<h3>Effect of different CFG scale</h3>
+		<h3>Effect of CFG scale</h3>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th></th>
-                          <th>1.0</th>
-                          <th>1.25</th>
-                          <th>1.5</th>
-						  <th>1.75</th>
-						  <th>2.0</th>
-						  <th>2.5</th>
-                          <th>3.0</th>
+                          <th>Text</th>
+						  <th>Prompt</th>
+                          <th>&#969=1.0</th>
+                          <th>&#969=1.5</th>
+						  <th>&#969=2.0</th>
+						  <th>&#969=2.5</th>
+                          <th>&#969=3.0</th>
                         </tr>
                       </thead>
                       <tbody>
 						
 						<tr>
-                          <th scope="row">Sample 1</th>
+                          <th scope="row">但艾肯尔还是感到害怕，还萌生了打道回府的念头。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/1-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000046-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000109-cfg1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000109-cfg1.5.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000109-cfg2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000109-cfg2.5.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004566-00000109-cfg3.wav" type="audio/wav" />
                             </audio>
                           </td>
-						  <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/1-p272.wav" type="audio/wav" />
-                            </audio>
-                          </td>
+
                         </tr>
 						
 						
 						
 						
 						<tr>
-                          <th scope="row">Sample 2</th>
+                          <th scope="row">令人可怕的描述，差不多用了十页稿纸。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/2-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000071-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000017-cfg1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000017-cfg1.5.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000017-cfg2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000017-cfg2.5.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004553-00000017-cfg3.wav" type="audio/wav" />
                             </audio>
                           </td>
-						  <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/2-p272.wav" type="audio/wav" />
-                            </audio>
-                          </td>
+						  
                         </tr>
 						
 						
 						
 						<tr>
-                          <th scope="row">Sample 3</th>
+                          <th scope="row">每天早晨有一个老仆人，来为他打扫房间和跑腿。</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/3-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000087-prompt.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000030-cfg1.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000030-cfg1.5.wav" type="audio/wav" />
                             </audio>
                           </td>
 						  <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000030-cfg2.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000030-cfg2.5.wav" type="audio/wav" />
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/00004540-00000030-cfg3.wav" type="audio/wav" />
                             </audio>
                           </td>
-						  <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/3-p272.wav" type="audio/wav" />
-                            </audio>
-                          </td>
+						  
                         </tr>
 						
 						
@@ -1390,7 +1432,7 @@
                           <td>Source</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/1-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p262.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1399,7 +1441,7 @@
                           <td>Target</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1408,7 +1450,7 @@
                           <td>Baseline-100</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1417,7 +1459,7 @@
                           <td>Proposed-50</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1426,29 +1468,21 @@
                           <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/1-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
-                        <tr>
-                          <td>Proposed-5</td>
-                          <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/1-p272.wav" type="audio/wav" />
-                              Your browser does not support the audio element.
-                            </audio>
-                          </td>
-                        </tr>
+						
                       </tbody>
                     </table>
                   
@@ -1465,7 +1499,7 @@
                           <td>Source</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/2-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/2-p262.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1474,7 +1508,7 @@
                           <td>Target</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1483,7 +1517,7 @@
                           <td>Baseline-100</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/2-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1492,7 +1526,7 @@
                           <td>Proposed-50</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/2-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1501,29 +1535,21 @@
                           <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/2-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
-                        </tr>
+                        </tr>	
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/2-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
-                        <tr>
-                          <td>Proposed-5</td>
-                          <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/2-p272.wav" type="audio/wav" />
-                              Your browser does not support the audio element.
-                            </audio>
-                          </td>
-                        </tr>
+						
                       </tbody>
                     </table>
                     
@@ -1540,7 +1566,7 @@
                           <td>Source</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/source/3-p262.wav" type="audio/wav" />
+                              <source src="./audio/cfg/3-p262.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1549,7 +1575,7 @@
                           <td>Target</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/target/p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1558,7 +1584,7 @@
                           <td>Baseline-100</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/Base100/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/3-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1567,7 +1593,7 @@
                           <td>Proposed-50</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p50/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/3-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -1576,29 +1602,21 @@
                           <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p20/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/3-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <td>Proposed-10</td>
+                          <td>Proposed-20</td>
                           <td>
                             <audio controls>
-                              <source src="./audio/F2M/p10/3-p272.wav" type="audio/wav" />
+                              <source src="./audio/cfg/1-p272.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
-                        <tr>
-                          <td>Proposed-5</td>
-                          <td>
-                            <audio controls>
-                              <source src="./audio/F2M/p5/3-p272.wav" type="audio/wav" />
-                              Your browser does not support the audio element.
-                            </audio>
-                          </td>
-                        </tr>
+						
                       </tbody>
                     </table>
                     
@@ -1620,7 +1638,7 @@
             </p>
             <p>
               <a name="3">[3]</a>
-              Fu-Yun Wang, Yunhao Shui, Piao, et al., “Diffusion-NPO: Negative preference optimization for better preference aligned generation of diffusion models</a>,” in <em>ICLR, 2025.</em>
+              Fu-Yun Wang, Yunhao Shui, Piao, et al., “Diffusion-NPO: Negative preference optimization for better preference aligned generation of diffusion models</a>,” in <em>ICLR, 2025.</em>
             </p>
           </div>
         </div>
